@@ -1,5 +1,4 @@
-﻿@'
-name: Release Verification
+﻿name: Release Verification
 
 on:
   push:
