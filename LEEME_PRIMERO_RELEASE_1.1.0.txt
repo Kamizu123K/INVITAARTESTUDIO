@@ -1,0 +1,30 @@
+INVITA ARTE STUDIO v1.1.0 - RELEASE LOCAL CON 3 APIs
+=====================================================
+
+PARA EJECUTAR EN WINDOWS
+1. Extraer el ZIP completo.
+2. Hacer doble clic en INSTALAR_Y_EJECUTAR.bat.
+3. Abrir http://localhost:3000 si no se abre automáticamente.
+4. Mantener abierta la ventana de la terminal.
+
+LAS 3 APIs INTEGRADAS
+- Supabase API: sincronización de solicitudes y RSVP.
+- Google Sheets API: filas en Solicitudes y RSVP.
+- WhatsApp Cloud API: notificaciones de solicitudes y confirmaciones.
+
+SIN CREDENCIALES TAMBIÉN FUNCIONA
+- Supabase: respaldo local.
+- Google Sheets: archivo runtime-data/google-sheets-fallback.csv.
+- WhatsApp: bandeja local y enlace wa.me.
+
+PARA VERIFICAR LA RELEASE
+Ejecutar VERIFICAR_RELEASE.bat.
+
+DOCUMENTACIÓN
+- README.md
+- docs/CONFIGURAR_3_APIS.md
+- docs/EVIDENCIAS_RELEASE_PASO_A_PASO.md
+- RELEASE_NOTES_v1.1.0.md
+
+IMPORTANTE
+Las claves reales van únicamente en .env. Nunca deben colocarse en js/config.js ni publicarse.

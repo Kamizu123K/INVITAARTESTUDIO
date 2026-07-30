@@ -1,0 +1,12 @@
+<svg width="360" height="92" viewBox="0 0 360 92" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Invita Arte Studio - Invitaciones digitales">
+<defs><linearGradient id="p" x1="8" y1="12" x2="86" y2="84" gradientUnits="userSpaceOnUse"><stop stop-color="#C084FC"/><stop offset="1" stop-color="#6D28D9"/></linearGradient><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D8A23C"/><stop offset="1" stop-color="#B7791F"/></linearGradient></defs>
+<rect x="8" y="14" width="76" height="58" rx="18" fill="#FBF7FF" stroke="#E9D5FF"/>
+<path d="M18 35h56v31H18V35Z" fill="url(#p)" stroke="#B7791F" stroke-width="1.4"/>
+<path d="M18 35l28 20 28-20M18 66l21-19M74 66L53 47" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M46 52c-7-6-16 3-6 10l6 5 6-5c10-7 1-16-6-10Z" fill="url(#g)"/>
+<path d="M81 20l4 9 9 4-9 4-4 9-4-9-9-4 9-4 4-9Z" fill="#D8A23C"/>
+<text x="100" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="29" font-weight="700" fill="#4C1D75">Invita</text>
+<text x="190" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="29" font-weight="700" fill="#B7791F">Arte</text>
+<text x="262" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="29" font-weight="700" fill="#4C1D75">Studio</text>
+<text x="102" y="66" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#6B21A8">INVITACIONES DIGITALES</text>
+</svg>

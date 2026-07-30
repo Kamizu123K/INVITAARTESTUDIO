@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "product": "Invita Arte Studio",
+  "version": "1.1.0",
+  "environment": "local",
+  "time": "2026-07-30T05:20:15.877Z",
+  "integrations": [
+    {
+      "name": "Supabase API",
+      "enabled": false,
+      "mode": "respaldo local",
+      "detail": "Completa SUPABASE_URL y SUPABASE_SERVICE_ROLE_KEY en .env."
+    },
+    {
+      "name": "Google Sheets API",
+      "enabled": false,
+      "mode": "CSV local",
+      "detail": "Las filas se registran en runtime-data/google-sheets-fallback.csv."
+    },
+    {
+      "name": "WhatsApp Cloud API",
+      "enabled": false,
+      "mode": "bandeja local + wa.me",
+      "detail": "Los mensajes se guardan en runtime-data/local-api-db.json."
+    }
+  ]
+}

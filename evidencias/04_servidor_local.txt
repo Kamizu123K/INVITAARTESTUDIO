@@ -1,0 +1,8 @@
+
+Invita Arte Studio v1.1.0
+Local: http://localhost:3000
+Integraciones:
+- Supabase API: respaldo local
+- Google Sheets API: CSV local
+- WhatsApp Cloud API: bandeja local + wa.me
+

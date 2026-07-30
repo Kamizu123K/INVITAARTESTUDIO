@@ -1,0 +1,106 @@
+
+> invita-arte-studio-release-1-1-0@1.1.0 release:verify
+> npm run check && npm test && npm run build
+
+
+> invita-arte-studio-release-1-1-0@1.1.0 check
+> node scripts/check-syntax.js
+
+OK    js/app.js
+OK    js/chatbot.js
+OK    js/config.js
+OK    js/controllers/AppController.js
+OK    js/controllers/AuthController.js
+OK    js/controllers/CatalogController.js
+OK    js/controllers/CrudController.js
+OK    js/controllers/OrderController.js
+OK    js/data/seedData.js
+OK    js/effects.js
+OK    js/models/AuthModel.js
+OK    js/models/CatalogModel.js
+OK    js/models/OrderModel.js
+OK    js/services/ApiIntegrationService.js
+OK    js/services/LocalStoreService.js
+OK    js/services/SupabaseService.js
+OK    js/views/AuthView.js
+OK    js/views/DashboardView.js
+OK    js/views/LayoutView.js
+OK    js/views/PublicView.js
+OK    netlify/functions/health.js
+OK    scripts/build-release.js
+OK    scripts/check-syntax.js
+OK    server/services/google-sheets-integration.js
+OK    server/services/integration-hub.js
+OK    server/services/local-db.js
+OK    server/services/supabase-integration.js
+OK    server/services/whatsapp-integration.js
+OK    server/utils/env.js
+OK    server/utils/validation.js
+OK    server.js
+OK    tests/integrations.test.js
+OK    tests/local-db.test.js
+OK    tests/validation.test.js
+
+Archivos revisados: 34. Errores: 0.
+
+> invita-arte-studio-release-1-1-0@1.1.0 test
+> node --test tests/*.test.js
+
+TAP version 13
+# Subtest: las tres integraciones funcionan con respaldo local sin credenciales
+ok 1 - las tres integraciones funcionan con respaldo local sin credenciales
+  ---
+  duration_ms: 6.137379
+  type: 'test'
+  ...
+# Subtest: actualiza un RSVP duplicado en lugar de crear dos
+ok 2 - actualiza un RSVP duplicado en lugar de crear dos
+  ---
+  duration_ms: 4.489949
+  type: 'test'
+  ...
+# Subtest: permite recuperar un pedido por código
+ok 3 - permite recuperar un pedido por código
+  ---
+  duration_ms: 1.101852
+  type: 'test'
+  ...
+# Subtest: acepta una solicitud válida
+ok 4 - acepta una solicitud válida
+  ---
+  duration_ms: 2.317975
+  type: 'test'
+  ...
+# Subtest: rechaza correo inválido y datos incompletos
+ok 5 - rechaza correo inválido y datos incompletos
+  ---
+  duration_ms: 0.50602
+  type: 'test'
+  ...
+# Subtest: sanitiza caracteres de control y limita longitud
+ok 6 - sanitiza caracteres de control y limita longitud
+  ---
+  duration_ms: 0.179057
+  type: 'test'
+  ...
+# Subtest: valida RSVP y normaliza teléfono
+ok 7 - valida RSVP y normaliza teléfono
+  ---
+  duration_ms: 0.437531
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 168.191488
+
+> invita-arte-studio-release-1-1-0@1.1.0 build
+> node scripts/build-release.js
+
+Build generado: /mnt/data/invita_release/Invita_Arte_Studio_Release_v1.1.0_3_APIs_Local/dist/invita-arte-studio-1.1.0
+Archivos: 120

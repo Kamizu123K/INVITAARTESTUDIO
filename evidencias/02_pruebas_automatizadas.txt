@@ -1,0 +1,56 @@
+
+> invita-arte-studio-release-1-1-0@1.1.0 test
+> node --test tests/*.test.js
+
+TAP version 13
+# Subtest: las tres integraciones funcionan con respaldo local sin credenciales
+ok 1 - las tres integraciones funcionan con respaldo local sin credenciales
+  ---
+  duration_ms: 8.447295
+  type: 'test'
+  ...
+# Subtest: actualiza un RSVP duplicado en lugar de crear dos
+ok 2 - actualiza un RSVP duplicado en lugar de crear dos
+  ---
+  duration_ms: 5.219598
+  type: 'test'
+  ...
+# Subtest: permite recuperar un pedido por código
+ok 3 - permite recuperar un pedido por código
+  ---
+  duration_ms: 1.248074
+  type: 'test'
+  ...
+# Subtest: acepta una solicitud válida
+ok 4 - acepta una solicitud válida
+  ---
+  duration_ms: 3.070651
+  type: 'test'
+  ...
+# Subtest: rechaza correo inválido y datos incompletos
+ok 5 - rechaza correo inválido y datos incompletos
+  ---
+  duration_ms: 0.523832
+  type: 'test'
+  ...
+# Subtest: sanitiza caracteres de control y limita longitud
+ok 6 - sanitiza caracteres de control y limita longitud
+  ---
+  duration_ms: 0.257649
+  type: 'test'
+  ...
+# Subtest: valida RSVP y normaliza teléfono
+ok 7 - valida RSVP y normaliza teléfono
+  ---
+  duration_ms: 3.728472
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 189.019032

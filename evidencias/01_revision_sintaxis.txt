@@ -1,0 +1,40 @@
+
+> invita-arte-studio-release-1-1-0@1.1.0 check
+> node scripts/check-syntax.js
+
+OK    js/app.js
+OK    js/chatbot.js
+OK    js/config.js
+OK    js/controllers/AppController.js
+OK    js/controllers/AuthController.js
+OK    js/controllers/CatalogController.js
+OK    js/controllers/CrudController.js
+OK    js/controllers/OrderController.js
+OK    js/data/seedData.js
+OK    js/effects.js
+OK    js/models/AuthModel.js
+OK    js/models/CatalogModel.js
+OK    js/models/OrderModel.js
+OK    js/services/ApiIntegrationService.js
+OK    js/services/LocalStoreService.js
+OK    js/services/SupabaseService.js
+OK    js/views/AuthView.js
+OK    js/views/DashboardView.js
+OK    js/views/LayoutView.js
+OK    js/views/PublicView.js
+OK    netlify/functions/health.js
+OK    scripts/build-release.js
+OK    scripts/check-syntax.js
+OK    server/services/google-sheets-integration.js
+OK    server/services/integration-hub.js
+OK    server/services/local-db.js
+OK    server/services/supabase-integration.js
+OK    server/services/whatsapp-integration.js
+OK    server/utils/env.js
+OK    server/utils/validation.js
+OK    server.js
+OK    tests/integrations.test.js
+OK    tests/local-db.test.js
+OK    tests/validation.test.js
+
+Archivos revisados: 34. Errores: 0.

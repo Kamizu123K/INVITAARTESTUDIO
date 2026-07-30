@@ -1,0 +1,12 @@
+{
+  "name": "Invita Arte Studio",
+  "version": "1.1.0",
+  "releaseType": "minor",
+  "releaseDate": "2026-07-30",
+  "environment": "local/staging",
+  "integrations": [
+    "Supabase API",
+    "Google Sheets API",
+    "WhatsApp Cloud API"
+  ]
+}

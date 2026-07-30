@@ -1,0 +1,29 @@
+{
+  "name": "invita-arte-studio-release-1-1-0",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Invita Arte Studio MVC con servidor local e integraciones opcionales de Supabase, Google Sheets y WhatsApp Cloud API.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test tests/integrations.test.js tests/local-db.test.js tests/validation.test.js",
+    "check": "node scripts/check-syntax.js",
+    "build": "node scripts/build-release.js",
+    "release:verify": "npm run check && npm test && npm run build"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "keywords": [
+    "invitaciones digitales",
+    "mvc",
+    "supabase",
+    "google sheets",
+    "whatsapp cloud api",
+    "express",
+    "release"
+  ],
+  "author": "Camila Costas Alemán de Faria - Invita Arte Studio",
+  "license": "MIT"
+}

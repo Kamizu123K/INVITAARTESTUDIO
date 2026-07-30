@@ -1,0 +1,12 @@
+HTTP/1.1 404 Not Found
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+Permissions-Policy: camera=(), microphone=(), geolocation=()
+Cross-Origin-Resource-Policy: same-origin
+Content-Type: application/json; charset=utf-8
+Cache-Control: no-store
+Date: Thu, 30 Jul 2026 05:20:15 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+

@@ -1,0 +1,3 @@
+Número de WhatsApp actualizado a +591 74562899.
+Formato usado en código para enlaces: 59174562899.
+Archivos principales actualizados: js/config.js, js/views/PublicView.js, js/views/AuthView.js y datos demo relacionados.

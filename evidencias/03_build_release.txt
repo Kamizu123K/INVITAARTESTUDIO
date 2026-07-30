@@ -1,0 +1,6 @@
+
+> invita-arte-studio-release-1-1-0@1.1.0 build
+> node scripts/build-release.js
+
+Build generado: /mnt/data/invita_release/Invita_Arte_Studio_Release_v1.1.0_3_APIs_Local/dist/invita-arte-studio-1.1.0
+Archivos: 119

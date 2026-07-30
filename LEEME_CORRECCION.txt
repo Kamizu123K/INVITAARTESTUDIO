@@ -1,0 +1,2 @@
+Se corrigió la visualización de las tarjetas del catálogo con fotos realistas.
+Si en el navegador sigue mostrando el diseño anterior, presiona Ctrl+F5 o limpia el localStorage del sitio.
