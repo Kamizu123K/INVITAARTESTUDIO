@@ -53,14 +53,20 @@ jobs:
 
           echo "No forbidden local files were found."
 
-      - name: Scan tracked files for possible secrets
+            - name: Scan tracked files for possible secrets
         shell: bash
         run: |
           set -euo pipefail
 
-          if git grep -n -E -- \
-            '-----BEGIN PRIVATE KEY-----|sb_secret_[A-Za-z0-9_-]{20,}|EAA[A-Za-z0-9]{40,}' \
-            -- .; then
+          # Se divide el texto para evitar que el escáner
+          # detecte su propia expresión dentro del workflow.
+          private_key_pattern='-----BEGIN PRIVATE'' KEY-----'
+          supabase_pattern='sb_secret_[A-Za-z0-9_-]{20,}'
+          meta_pattern='EAA[A-Za-z0-9]{40,}'
+
+          combined_pattern="${private_key_pattern}|${supabase_pattern}|${meta_pattern}"
+
+          if git grep -n -E -- "$combined_pattern" -- .; then
             echo "A possible secret was detected."
             exit 1
           fi
