@@ -83,7 +83,7 @@ Fecha | Código | Invitado | Teléfono | Asistencia | Acompañantes | Notas | Op
 ```env
 GOOGLE_SHEET_ID=ID_QUE_APARECE_EN_LA_URL
 GOOGLE_SERVICE_ACCOUNT_EMAIL=cuenta@proyecto.iam.gserviceaccount.com
-GOOGLE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n"
+GOOGLE_PRIVATE_KEY="CLAVE_PRIVADA_DE_GOOGLE"
 ```
 
 ### Comprobación
