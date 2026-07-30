@@ -1,3 +1,4 @@
+﻿@'
 name: Release Verification
 
 on:
@@ -22,8 +23,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      - name: Configure Node.js 20
-        uses: actions/setup-node@v4
+      - name: Configure Node.js
+        uses: actions/setup-node@v6
         with:
           node-version: "20.x"
           cache: npm
@@ -34,14 +35,14 @@ jobs:
       - name: Verify syntax, tests and build
         run: npm run release:verify
 
-      - name: Verify forbidden files
+      - name: Verify forbidden tracked files
         shell: bash
         run: |
           set -euo pipefail
 
           forbidden_files="$(
             git ls-files |
-            grep -E '(^|/)\.env$|(^|/)node_modules/|(^|/)dist/|(^|/)runtime-data/|local-api-db\.json$|credentials.*\.json$|service-account.*\.json$' ||
+            grep -E '(^|/)\.env$|(^|/)node_modules/|(^|/)dist/|(^|/)runtime-data/|(^|/)supabase/\.temp/|local-api-db\.json$|credentials.*\.json$|service-account.*\.json$' ||
             true
           )"
 
@@ -51,22 +52,20 @@ jobs:
             exit 1
           fi
 
-          echo "No forbidden local files were found."
+          echo "No forbidden tracked files were found."
 
-            - name: Scan tracked files for possible secrets
+      - name: Scan tracked files for possible secrets
         shell: bash
         run: |
           set -euo pipefail
 
-          # Se divide el texto para evitar que el escáner
-          # detecte su propia expresión dentro del workflow.
           private_key_pattern='-----BEGIN PRIVATE'' KEY-----'
-          supabase_pattern='sb_secret_[A-Za-z0-9_-]{20,}'
-          meta_pattern='EAA[A-Za-z0-9]{40,}'
-
+          supabase_pattern='sb_''secret_[A-Za-z0-9_-]{20,}'
+          meta_pattern='EA''A[A-Za-z0-9]{40,}'
           combined_pattern="${private_key_pattern}|${supabase_pattern}|${meta_pattern}"
 
-          if git grep -n -E -- "$combined_pattern" -- .; then
+          if git grep -n -E -- "$combined_pattern" -- . \
+            ':(exclude).github/workflows/release.yml'; then
             echo "A possible secret was detected."
             exit 1
           fi
